@@ -1,7 +1,7 @@
 <body class="flex justify-center items-center bg-purple-700">
 
   <script>
-    const radnik = new Worker("./radnik.js");
+    const radnik = new Worker("radnik.js");
     radnik.onmessage = (e) => console.log("Primio poruku: " + e.data);
     radnik.postMessage("bok");
   </script><
