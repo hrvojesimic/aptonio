@@ -1,0 +1,11 @@
+<body class="flex justify-center items-center bg-purple-700">
+
+  <script>
+    console.log("start");
+    fetch("./radnik.js").then(r => r.text()).then(b => console.log(b));
+    const radnik = new Worker("./radnik.js");
+    radnik.onmessage = (msg) => console.log(msg);
+    radnik.postMessage("bok");
+    console.log("end");
+  </script><
+</body>
