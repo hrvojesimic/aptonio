@@ -9,6 +9,21 @@ const monthNames = {
   hr: {5: "svibanj / maj", 6: "lipanj / jun", 7: "srpanj / juli", 8: "kolovoz / august", 9: "rujan / septembar"},
   en: {5: "May", 6: "June", 7: "July", 8: "August", 9: "September"}
 };
+const reservations = [
+  ["2021-06-19", "2021-06-27"],
+  ["2021-07-03", "2021-07-10"],
+];
+
+function occupied(date) {
+  for (let period of reservations) {
+    const start = dayjs(period[0]);
+    const end = dayjs(period[1]);
+    if (date.isSame(start) || date.isAfter(start))
+      if (date.isBefore(end))
+        return true;
+  }
+  return false;
+}
 
 function weekStarts(month) {
   const result = [];
@@ -40,7 +55,8 @@ function monthRows(m) {
     for (let d = 0; d < 7; d++) {
       const date = weekStart.add(d, 'days');
       const label = (date.month()+1 == m)? date.date() : "";
-      result += `<td class="itemCellGlow">${label}</td>`;
+      const occupiedClass = occupied(date)? "itemCellOff" : "itemCellGlow";
+      result += `<td class="${occupiedClass}">${label}</td>`;
     }
     result += "</tr>";
   }
