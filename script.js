@@ -12,6 +12,7 @@ const monthNames = {
 const reservations = [
   ["2021-06-19", "2021-06-27"],
   ["2021-07-03", "2021-07-10"],
+  ["2021-08-05", "2021-08-14"],
 ];
 
 function occupied(date) {
