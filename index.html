@@ -890,8 +890,10 @@
 <!-- Custom Theme JavaScript -->
 <script src="./tonio.hr_files/agency.js.download"></script>
 
-<script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
-<script>dayjs().format()</script>
+<script src="https://unpkg.com/dayjs@1.10.5/dayjs.min.js"></script>
+<script src="https://unpkg.com/dayjs@1.10.5/plugin/isoWeek.js"></script>
+<script>dayjs.extend(window.dayjs_plugin_isoWeek);</script>
+<script>dayjs().format();</script>
 
 <script src="./script.js"></script>
 <script>loadCalendar();</script>

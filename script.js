@@ -6,12 +6,14 @@ const weekdays = {
   en: "Mon Tue Wed Thu Fri Sat Sun".split(" ")
 };
 const monthNames = {
-  hr: {5: "svibanj / maj", 6: "lipanj / jun", 7: "srpanj / juli", 8: "kolovoz / august", 9: "rujan / septembar"},
-  en: {5: "May", 6: "June", 7: "July", 8: "August", 9: "September"}
+  hr: {5: "svibanj / maj", 6: "lipanj / jun", 7: "srpanj / juli", 8: "kolovoz / august", 9: "rujan / septembar", 10: "listopad / oktobar"},
+  en: {5: "May", 6: "June", 7: "July", 8: "August", 9: "September", 10: "October"}
 };
 const reservations = [
   ["2021-06-19", "2021-06-27"],
+  ["2021-06-29", "2021-07-02"],
   ["2021-07-03", "2021-07-10"],
+  ["2021-07-12", "2021-07-16"],
   ["2021-07-25", "2021-08-05"], // Tino
   ["2021-08-05", "2021-08-14"], // mi
   ["2021-08-14", "2021-08-22"], // Tino
@@ -31,7 +33,7 @@ function occupied(date) {
 
 function weekStarts(month) {
   const result = [];
-  let d = dayjs([year, month, 1]).startOf('week').add(1, 'day');
+  let d = dayjs([year, month, 1]).startOf('isoWeek');
   while (d.month()+1 <= month) {
     result.push(d);
     d = d.add(7, 'days');
@@ -47,7 +49,7 @@ function calendar() {
 
 function months() {
   let result = "";
-  for (let m = 5; m <= 9; m++)
+  for (let m = 6; m <= 10; m++)
     result += monthRows(m);
   return result;
 }
