@@ -1,6 +1,6 @@
 let lang = "hr";
 
-const year = 2021;
+const year = 2022;
 const weekdays = {
   hr: "pon uto sri čet pet sub ned".split(" "),
   en: "Mon Tue Wed Thu Fri Sat Sun".split(" ")
@@ -49,7 +49,7 @@ function calendar() {
 
 function months() {
   let result = "";
-  for (let m = 6; m <= 10; m++)
+  for (let m = 5; m <= 9; m++)
     result += monthRows(m);
   return result;
 }
