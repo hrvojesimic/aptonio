@@ -10,7 +10,7 @@ const monthNames = {
   en: {5: "May", 6: "June", 7: "July", 8: "August", 9: "September", 10: "October"}
 };
 const reservations = [
-  //["2021-06-19", "2021-06-27"],
+  ["2022-07-02", "2022-07-09"],
 ];
 
 function occupied(date) {
