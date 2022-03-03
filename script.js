@@ -16,6 +16,7 @@ const reservations = [
   ["2022-07-17", "2022-07-24"], // Jasmin Pipić
   ["2022-07-24", "2022-08-05"], // Vildana Hodžić
   ["2022-08-05", "2022-08-15"], // mi
+  ["2022-08-15", "2022-08-22"], // Aida Čolić
 ];
 
 function occupied(date) {
