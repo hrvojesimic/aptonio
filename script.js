@@ -10,6 +10,7 @@ const monthNames = {
   en: {5: "May", 6: "June", 7: "July", 8: "August", 9: "September", 10: "October"}
 };
 const reservations = [
+  ["2022-06-12", "2022-06-19"], // Mehmedović
   ["2022-06-22", "2022-06-26"], // mi
   ["2022-06-26", "2022-07-02"], // Sanja iz Češke
   ["2022-07-02", "2022-07-09"],
