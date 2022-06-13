@@ -306,7 +306,7 @@ header .intro-text .intro-heading {
 
 header .intro-text .intro-langs {
   font-size: 2em;
-  margin-top: 120px;
+  margin-top: 80px;
 }
 header .intro-text .intro-langs a {
   color: #fec503;
@@ -327,7 +327,7 @@ header .intro-text .intro-langs a {
     }
 
     header .intro-text .intro-heading {
-        margin-bottom: 50px;
+        margin-bottom: 20px;
         text-transform: uppercase;
         font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
         font-size: 75px;

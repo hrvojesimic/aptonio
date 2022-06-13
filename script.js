@@ -15,7 +15,7 @@ const reservations = [
   ["2022-06-26", "2022-07-02"], // Sanja iz Češke
   ["2022-07-02", "2022-07-09"],
   ["2022-07-17", "2022-07-24"], // Jasmin Pipić
-  ["2022-07-24", "2022-08-05"], // Vildana Hodžić
+  ["2022-07-24", "2022-08-30"], // Vildana Hodžić
   ["2022-08-05", "2022-08-15"], // mi
   ["2022-08-15", "2022-08-22"], // Aida Čolić
   ["2022-08-23", "2022-08-29"], // Šerepec
@@ -51,7 +51,7 @@ function calendar() {
 
 function months() {
   let result = "";
-  for (let m = 5; m <= 9; m++)
+  for (let m = 6; m <= 10; m++)
     result += monthRows(m);
   return result;
 }
