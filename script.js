@@ -42,7 +42,7 @@ function calendar() {
 
 function months() {
   let result = "";
-  for (let m = 6; m <= 10; m++)
+  for (let m = 5; m <= 9; m++)
     result += monthRows(m);
   return result;
 }
