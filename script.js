@@ -21,6 +21,7 @@ const reservations = [
   ["2023-08-10", "2023-08-21"], // Jana Gubalova
   ["2023-08-22", "2023-08-28"], // Dražen Šerepec
   ["2023-08-28", "2023-09-03"], // Aida Mašić (do 2.9.)
+  ["2023-09-10", "2023-09-17"], // ?
 ];
 
 function occupied(date) {
