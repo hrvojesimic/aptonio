@@ -1,6 +1,6 @@
 let lang = "hr";
 
-const year = 2023;
+const year = 2024;
 const weekdays = {
   hr: "pon uto sri čet pet sub ned".split(" "),
   en: "Mon Tue Wed Thu Fri Sat Sun".split(" ")
@@ -10,18 +10,7 @@ const monthNames = {
   en: {5: "May", 6: "June", 7: "July", 8: "August", 9: "September", 10: "October"}
 };
 const reservations = [
-  ["2023-06-08", "2023-06-11"], // mi
-  ["2023-06-11", "2023-06-18"], // ?
-  ["2023-06-18", "2023-06-25"], // Đulančić
-  ["2023-06-25", "2023-07-02"], // Božić
-  ["2023-07-02", "2023-07-09"], // Sanja K.
-  ["2023-07-10", "2023-07-19"], // Ervin Tokić
-  ["2023-07-19", "2023-07-27"], // trener od Tokića
-  ["2023-07-30", "2023-08-09"], // mi
-  ["2023-08-10", "2023-08-21"], // Jana Gubalova
-  ["2023-08-22", "2023-08-28"], // Dražen Šerepec
-  ["2023-08-28", "2023-09-03"], // Aida Mašić (do 2.9.)
-  ["2023-09-03", "2023-09-10"], // ?
+//  ["2023-09-03", "2023-09-10"], // ?
 ];
 
 function occupied(date) {
