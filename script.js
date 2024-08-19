@@ -20,7 +20,7 @@ const reservations = [
   ["2024-07-31", "2024-08-05"], // 
   ["2024-08-05", "2024-08-15"], // mi
   ["2024-08-15", "2024-08-22"], // 
-  ["2024-08-23", "2024-08-28"], // 
+  ["2024-08-23", "2024-09-14"], // zauzeće
 ];
 
 function occupied(date) {
@@ -52,7 +52,7 @@ function calendar() {
 
 function months() {
   let result = "";
-  for (let m = 6; m <= 10; m++)
+  for (let m = 8; m <= 10; m++)
     result += monthRows(m);
   return result;
 }
