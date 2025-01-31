@@ -11,9 +11,9 @@ const monthNames = {
 };
 const reservations = [
   ["2025-06-04", "2025-06-28"], // Tino
-  ["2025-06-28", "2025-07-06"], // Tokić
+  ["2025-06-28", "2025-07-05"], // Tokić
   ["2025-07-06", "2025-07-20"], // Mehuljić
-  ["2025-08-03", "2025-08-16"], // mi
+  ["2025-08-03", "2025-08-15"], // mi
 ];
 
 function occupied(date) {
@@ -21,7 +21,7 @@ function occupied(date) {
     const start = dayjs(period[0]);
     const end = dayjs(period[1]);
     if (date.isSame(start) || date.isAfter(start))
-      if (date.isBefore(end))
+      if (date.isSame(end) || date.isBefore(end))
         return true;
   }
   return false;
